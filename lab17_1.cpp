@@ -55,18 +55,18 @@ int main(){
       getline(cin,commandtext);
 
       if (commandtext == "exit") break;
-      else if (commandtext.substr(0,6) == "grade")
+      else if (commandtext.substr(0,6) == "grade ")
       {
-       string key = commandtext.substr(7,7);
+       string key = commandtext.substr(6,7);
        for(int i=0 ; i<26 ; i++)
         {
-        if(list_grade[i] = key[i])
+        if(list_grade[i] = key[0])
           {
         cout<< list_name[i]<<endl;    
           }        
         }
       }
-      else if (commandtext.substr(0,5)=="name")
+      else if (commandtext.substr(0,5)=="name ")
       {
        string word = commandtext.substr(5,90);
        for(int i =0 ; i< 26 ; i++)
